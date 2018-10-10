@@ -10,7 +10,10 @@ class ServiceTableSeeder extends Seeder
     public function run()
     {
         DB::table(config('litecms.service.service.model.table'))->insert([
-            ['id' => '1', 'title' => 'WEB DESIGNING', 'icon' => null, 'heading' => null, 'description' => 'Zoom Infotech a company offering services on various platforms concerning your web presence was conceptualized by a zealous entrepreneur in year 2006. We at Zoom Infotech are very much concerned on delivering our customers the most creative and result driven websites.
+            [
+                'id'        => '1',
+                'title'      => 'WEB DESIGNING',
+                'icon'       => null, 'heading' => null, 'description' => 'Zoom Infotech a company offering services on various platforms concerning your web presence was conceptualized by a zealous entrepreneur in year 2006. We at Zoom Infotech are very much concerned on delivering our customers the most creative and result driven websites.
 We are completely aware of your needs and our potentials of delivering you the best of what you deserve.
 
 We specialize in services which include web development, designing & maintenance, website redesigning, web programming, e-Commerce solutions and online marketing for businesses.
@@ -27,8 +30,17 @@ Websites must be built with careful consideration of SEO, social sharing, conten
 
 Considering all these and the fact that “NO CHALLENGE IS TOO BIG, AND, NO DETAIL IS TOO SMALL” our proficient designers and developers take care of all the minute details that help creating a brand of values.
 
-We at Zoom Infotech help brands use the digital space to engage prospects, customers, leads and advocates.', 'image' => '[{"title":"Web design","caption":"Web design","url":"Web design","desc":null,"folder":"2018\\/10\\/10\\/072928838\\/image","time":"2018-10-10 07:30:27","path":"service\\/service\\/2018\\/10\\/10\\/072928838\\/image\\/web-design.png","file":"web-design.png"}]', 'slug' => 'web-designing', 'created_at' => '2018-10-10 03:34:36', 'updated_at' => '2018-10-10 07:34:36', 'deleted_at' => null],
-            ['id' => '2', 'title' => 'WEB DEVELOPMENT', 'icon' => null, 'heading' => null, 'description' => 'Our Development team is fully efficient in the latest technologies up in the market and concerning your every detail as major they hold up to the mark of giving you what you desire and visualize a proper platform.
+We at Zoom Infotech help brands use the digital space to engage prospects, customers, leads and advocates.',
+                'image'      => '[{"title":"Web design","caption":"Web design","url":"Web design","desc":null,"folder":"2018\\/10\\/10\\/072928838\\/image","time":"2018-10-10 07:30:27","path":"service\\/service\\/2018\\/10\\/10\\/072928838\\/image\\/web-design.png","file":"web-design.png"}]',
+                'slug'       => 'web-designing',
+                'created_at' => '2018-10-10 03:34:36',
+                'updated_at' => '2018-10-10 07:34:36',
+                'deleted_at' => null,
+            ],
+            [
+                'id'         => '2',
+                'title'      => 'WEB DEVELOPMENT',
+                'icon'       => null, 'heading' => null, 'description' => 'Our Development team is fully efficient in the latest technologies up in the market and concerning your every detail as major they hold up to the mark of giving you what you desire and visualize a proper platform.
 Developing any web space is easy but developing the one which can help a brand gain value is a work of full dedication, enthusiasm and passion.
 
 We at Zoom Infotech a company offering services on various platforms concerning your web presence conceptualized by a zealous entrepreneur in year 2006, are very much concerned on delivering our customers the most creative, relevant, organized, optimized and result driven websites.
@@ -45,8 +57,17 @@ Our development team analyses your requirements and as per your requirement offe
 
 Our developers have a neat and clean, systemized and organized coding under W3C standards.Websites must be built with careful consideration of SEO, social sharing, content strategy, marketing automation, dynamic personalization, lead scoring, and progressive profiling.
 
-Why Us?', 'image' => '[{"title":"11111111","caption":"11111111","url":"11111111","desc":null,"folder":"2018\\/10\\/10\\/073040787\\/image","time":"2018-10-10 07:31:35","path":"service\\/service\\/2018\\/10\\/10\\/073040787\\/image\\/11111111.png","file":"11111111.png"}]', 'slug' => 'web-development', 'created_at' => '2018-10-10 03:35:09', 'updated_at' => '2018-10-10 07:35:09', 'deleted_at' => null],
-            ['id' => '3', 'title' => 'APPS DEVELOPMENT', 'icon' => null, 'heading' => null, 'description' => 'Mobile market is strong today and developing an app, gives an easy way to showcase one’s products or services to their customers. Whenever customers want, they can just use it as a one-stop point to get all the information they need.
+Why Us?',
+                'image'      => '[{"title":"11111111","caption":"11111111","url":"11111111","desc":null,"folder":"2018\\/10\\/10\\/073040787\\/image","time":"2018-10-10 07:31:35","path":"service\\/service\\/2018\\/10\\/10\\/073040787\\/image\\/11111111.png","file":"11111111.png"}]',
+                'slug'       => 'web-development',
+                'created_at' => '2018-10-10 03:35:09',
+                'updated_at' => '2018-10-10 07:35:09',
+                'deleted_at' => null,
+            ],
+            [
+                'id'         => '3',
+                'title'      => 'APPS DEVELOPMENT',
+                'icon'       => null, 'heading' => null, 'description' => 'Mobile market is strong today and developing an app, gives an easy way to showcase one’s products or services to their customers. Whenever customers want, they can just use it as a one-stop point to get all the information they need.
 Mobile Application Development is an area that goes beyond the creation of convincing user interface.
 
 We at Zoom Infotech a company offering services on various platforms concerning your web presence conceptualized by a zealous entrepreneur in year 2006, are very much concerned on delivering our customers the most creative, relevant, organized, optimized and result driven Mobile App.
@@ -59,7 +80,13 @@ Our Development team analyses your requirements and through our best strategic i
 
 Mobile App Development across noticeable platforms allows organizations a strategic advantage which includes converting the board-room ideas into technical reality.
 
-We for Mobile App Development follow an optimized approach which includes data-driven decision making which would help us in analyzing your needs and with the help of which we can bring your thoughts to the Technical World in which your mobile app would be just a click away from the user and thereby giving you a chance for creating a brand of values.', 'image' => '[{"title":"App","caption":"App","url":"App","desc":null,"folder":"2018\\/10\\/10\\/073142632\\/image","time":"2018-10-10 07:32:04","path":"service\\/service\\/2018\\/10\\/10\\/073142632\\/image\\/app.png","file":"app.png"}]', 'slug' => 'apps-development', 'created_at' => '2018-10-10 03:32:52', 'updated_at' => '2018-10-10 07:32:52', 'deleted_at' => null],
+We for Mobile App Development follow an optimized approach which includes data-driven decision making which would help us in analyzing your needs and with the help of which we can bring your thoughts to the Technical World in which your mobile app would be just a click away from the user and thereby giving you a chance for creating a brand of values.',
+                'image'      => '[{"title":"App","caption":"App","url":"App","desc":null,"folder":"2018\\/10\\/10\\/073142632\\/image","time":"2018-10-10 07:32:04","path":"service\\/service\\/2018\\/10\\/10\\/073142632\\/image\\/app.png","file":"app.png"}]',
+                'slug'       => 'apps-development',
+                'created_at' => '2018-10-10 03:32:52',
+                'updated_at' => '2018-10-10 07:32:52',
+                'deleted_at' => null
+            ],
         ]);
 
         DB::table('permissions')->insert([
