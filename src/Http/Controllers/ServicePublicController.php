@@ -38,7 +38,7 @@ class ServicePublicController extends BaseController
         })->paginate(9);
 
 
-        return $this->response->title(trans('service::service.names'))
+        return $this->response->setMetaTitle(trans('service::service.names'))
             ->view('service::public.service.index')
             ->data(compact('services'))
             ->output();
@@ -60,7 +60,7 @@ class ServicePublicController extends BaseController
         })->paginate();
 
 
-        return $this->response->title(trans('service::service.names'))
+        return $this->response->setMetaTitle(trans('service::service.names'))
             ->view('service::public.service.index')
             ->data(compact('services'))
             ->output();
@@ -80,7 +80,7 @@ class ServicePublicController extends BaseController
                          ->where('slug', $slug);
         })->first(['*']);
 
-        return $this->response->title(trans('service::service.name'))
+        return $this->response->setMetaTitle(trans('service::service.name'))
             ->view('service::public.service.show')
             ->data(compact('service'))
             ->output();

@@ -136,10 +136,10 @@ We for Mobile App Development follow an optimized approach which includes data-d
             ],
 
             [
-                'parent_id'   => 3,
+                'parent_id'   => 4,
                 'key'         => null,
-                'url'         => 'service',
-                'name'        => 'Service',
+                'url'         => 'services',
+                'name'        => 'Services',
                 'description' => null,
                 'icon'        => null,
                 'target'      => null,

@@ -48,7 +48,7 @@ class ServiceResourceController extends BaseController
 
         $services = $this->repository->paginate();
 
-        return $this->response->title(trans('service::service.names'))
+        return $this->response->setMetaTitle(trans('service::service.names'))
             ->view('service::service.index', true)
             ->data(compact('services'))
             ->output();
@@ -71,7 +71,7 @@ class ServiceResourceController extends BaseController
             $view = 'service::service.new';
         }
 
-        return $this->response->title(trans('app.view') . ' ' . trans('service::service.name'))
+        return $this->response->setMetaTitle(trans('app.view') . ' ' . trans('service::service.name'))
             ->data(compact('service'))
             ->view($view, true)
             ->output();
@@ -88,7 +88,7 @@ class ServiceResourceController extends BaseController
     {
 
         $service = $this->repository->newInstance([]);
-        return $this->response->title(trans('app.new') . ' ' . trans('service::service.name')) 
+        return $this->response->setMetaTitle(trans('app.new') . ' ' . trans('service::service.name')) 
             ->view('service::service.create', true) 
             ->data(compact('service'))
             ->output();
@@ -134,7 +134,7 @@ class ServiceResourceController extends BaseController
      */
     public function edit(ServiceRequest $request, Service $service)
     {
-        return $this->response->title(trans('app.edit') . ' ' . trans('service::service.name'))
+        return $this->response->setMetaTitle(trans('app.edit') . ' ' . trans('service::service.name'))
             ->view('service::service.edit', true)
             ->data(compact('service'))
             ->output();
