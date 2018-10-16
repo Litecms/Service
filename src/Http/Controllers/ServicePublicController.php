@@ -39,7 +39,7 @@ class ServicePublicController extends BaseController
 
 
         return $this->response->setMetaTitle(trans('service::service.names'))
-            ->view('service::public.service.index')
+            ->view('service::service.index')
             ->data(compact('services'))
             ->output();
     }
@@ -61,7 +61,7 @@ class ServicePublicController extends BaseController
 
 
         return $this->response->setMetaTitle(trans('service::service.names'))
-            ->view('service::public.service.index')
+            ->view('service::service.index')
             ->data(compact('services'))
             ->output();
     }
@@ -81,7 +81,7 @@ class ServicePublicController extends BaseController
         })->first(['*']);
 
         return $this->response->setMetaTitle(trans('service::service.name'))
-            ->view('service::public.service.show')
+            ->view('service::service.show')
             ->data(compact('service'))
             ->output();
     }

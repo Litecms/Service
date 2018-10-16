@@ -1,4 +1,4 @@
-            @include('service::public.service.partial.header')
+            @include('service::service.partial.header')
 
             <section class="grid">
                 <div class="container">
